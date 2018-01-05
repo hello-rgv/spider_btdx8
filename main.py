@@ -362,30 +362,31 @@ def main_test():
     # =======================================================================================
 
     # 测试抓取影片下载页面并下载影片种子文件
-    url = 'http://www.btdx8.com/torrent/jqzx_2017.html'
-    rsp = requests.get(url)
-    rsp_text = rsp.text
-    # 影片详情页面的下载地址
-    movie_down_info = get_movie_download(rsp_text)
-
-    # 影片 id
-    post_id = get_movie_post_id(rsp_text)
-
-    # 影片名称
-    movie_name = movie_down_info[0][2]
-
-    # 影片下载页面链接地址
-    movie_href = movie_down_info[0][0]
-
-    # 获取下载页面html源码
-    movie_down_page_code = get_movie_down_page(movie_href, post_id)
-
-    # 种子文件下载链接
-    movie_down_href = get_movie_down_href(movie_down_page_code, post_id)
-
-    # 下载种子文件
-    if not down_movie_file(movie_name, movie_down_href['down'], movie_href):
-        print('下载失败的影片地址: ', url)
+    # url = 'http://www.btdx8.com/torrent/jqzx_2017.html'
+    # rsp = requests.get(url)
+    # rsp_text = rsp.text
+    # # 影片详情页面的下载地址
+    # movie_down_info = get_movie_download(rsp_text)
+    #
+    # # 影片 id
+    # post_id = get_movie_post_id(rsp_text)
+    #
+    # # 影片名称
+    # movie_name = movie_down_info[0][2]
+    #
+    # # 影片下载页面链接地址
+    # movie_href = movie_down_info[0][0]
+    #
+    # # 获取下载页面html源码
+    # movie_down_page_code = get_movie_down_page(movie_href, post_id)
+    #
+    # # 种子文件下载链接
+    # movie_down_href = get_movie_down_href(movie_down_page_code, post_id)
+    #
+    # # 下载种子文件
+    # if not down_movie_file(movie_name, movie_down_href['down'], movie_href):
+    #     print('下载失败的影片地址: ', url)
+    # =======================================================================================
 
 
 main_test()
