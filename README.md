@@ -9,3 +9,5 @@ Python 练习 采集比特大熊(http://www.btdx8.com)影片数据
 * IDE            : PyCharm 2017.3
 * OS             : win10
 
+> 因为是初学 Python 应该有很多地方需要改进
+
