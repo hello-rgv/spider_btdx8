@@ -5,6 +5,7 @@ Author: Mr Bean
 
 Python version : 3.6
 Module         : requests
+IDE            : PyCharm 2017.3
 OS             : win10
 
 """
