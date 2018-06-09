@@ -8,7 +8,6 @@ Module         : requests
 IDE            : PyCharm 2017.3
 OS             : win10
 
-git gui test
 
 """
 
